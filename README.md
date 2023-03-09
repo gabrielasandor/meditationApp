@@ -1,3 +1,3 @@
 # MeditationApp
 
-# Live: https://delicate-tartufo-bef247.netlify.app/
+# Live: https://stellular-malasada-667dca.netlify.app/
