@@ -24,30 +24,28 @@
   .time-select button,
   .sound-picker button {
     color: white;
-    width: 30%;
-    height: 10%;
+    width: 20vh;
+    height: 10vh;
     background: none;
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 2vh;
+    border-radius: 5%;
     cursor: pointer;
-    border: 2px solid white;
+    border: 0.2vh solid white;
     transition: all 0.5s ease;
   }
   
   .sound-picker button {
     border: none;
-    height: 120px;
-    width: 120px;
+    height: 18vh;
+    width: 12vw;
     padding: 30px;
     border-radius: 50%;
   }
   .sound-picker button:nth-child(1) {
-    background: #85a9d1;
-    opacity: 0.75;
+    background: none;
   }
   .sound-picker button:nth-child(2) {
-    background: #b85c55;
-    opacity: 0.75;
+    background: none; 
   }
   .sound-picker button img {
     height: 100%;
@@ -69,12 +67,12 @@
   }
 
   .play {
-    height: 15%;
+    height: 15vh;
     display: block;
   }
 
   .replay{
-    height: 18%;
+    height: 15vh;
     display: none;
   }
   
@@ -92,7 +90,7 @@
   .time-display {
     color: white;
     position: absolute;
-    font-size: 50px;
+    font-size: 5vh;
     bottom: 10%;
   }
   
@@ -103,3 +101,60 @@
     width: 100%;
     z-index: -10;
   }
+
+  @media screen and (max-width: 1050px) {
+   body{
+    background-color: rgb(0, 0, 0);
+   }
+    
+    .vid-container {
+      height: 300vh;
+    }
+
+    video {
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    
+    .time-select,
+    .sound-picker {
+      height: 20%;
+    }
+
+    .time-select button,
+    .sound-picker button {
+      width: 10vh;
+      height: 5vh;
+      font-size: 1vh;
+    }
+    
+    .sound-picker button {
+      height: 8vh;
+      width: 2vw;
+      padding: 9px;
+    }
+     
+    .player-container {
+      height: 35%;
+    }
+  
+    .play {
+      height: 4vh;
+    }
+  
+    .replay{
+      height: 4vh;
+    }
+    
+    .player-container svg {
+      height: 30%;
+    }
+    
+    .time-display {
+      font-size: 2vh;
+    }
+  }
+
+  

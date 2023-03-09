@@ -10,7 +10,7 @@ const timeDisplay = document.querySelector(".time-display");
 const outlineLength = outline.getTotalLength();
 //Duration
 const timeSelect = document.querySelectorAll(".time-select button");
-let fakeDuration = 300;
+let fakeDuration = 900;
 
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
